@@ -22,7 +22,7 @@ This project is an automated **MLOps pipeline** designed to help **water utiliti
 ---
 
 ## 🚀 Features
-- ✅ Automated social media scraping (Twitter/X, Reddit)
+- ✅ Automated social media scraping (Twitter/X)
 - ✅ Data preprocessing and feature engineering
 - ✅ Centralized **Feature Store** using Hopsworks
 - ✅ ML pipeline for Sentiment Analysis & Named Entity Recognition (NER)
