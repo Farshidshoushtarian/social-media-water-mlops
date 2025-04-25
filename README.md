@@ -46,7 +46,7 @@ B --> C[Hopsworks Feature Store]
 C --> D[Training Layer<br>ML Pipelines + MLflow]
 C --> E[Inference Layer<br>Batch Predictions + GenAI]
 E --> F[Alerts & Dashboard]
-
+```
 
 
 
