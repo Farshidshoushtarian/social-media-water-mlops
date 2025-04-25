@@ -1,1 +1,1 @@
-# social-media-water-mlops
+# Social-media-water-mlops
