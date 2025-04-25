@@ -77,4 +77,100 @@ E --> F[Alerts & Dashboard]
 ├── requirements.txt
 ├── README.md
 └── LICENSE
+```
+---
+
+## 🚧 Current Status
+MVP in Progress
+This project is under active development as a part-time initiative. Contributions and feedback are welcome!
+
+---
+
+## 📈 How It Works
+1- Ingestion: Pulls relevant posts mentioning the utility every 12 hours.
+
+2- Feature Layer: Processes text and stores structured data in Hopsworks.
+
+3- Training Layer: ML models predict sentiment & extract entities.
+
+4- Inference Layer: Generates summaries, detects anomalies, triggers alerts.
+
+5- Visualization: Updates dashboard and sends reports.
+
+---
+
+## 🛠️ Setup Instructions
+
+Follow these steps to set up and run the project locally.
+
+### 1️⃣ Clone the Repository
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/social-media-water-mlops.git
+cd social-media-water-mlops
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Configure API Keys
+Create a .env file:
+
+```bash
+TWITTER_API_KEY=your_key_here
+REDDIT_CLIENT_ID=your_id_here
+OPENAI_API_KEY=your_openai_key
+HOPSWORKS_API_KEY=your_hopsworks_key
+EMAIL_SMTP_SERVER=smtp.example.com
+```
+
+### 4️⃣ Run Ingestion Script
+```bash
+python data_ingestion/run_ingestion.py
+```
+---
+
+## 📊 Example Output
+(Example dashboard or report snapshot will be added here once available)
+
+---
+## 🤝 Potential Collaboration
+This tool is designed with real-world utility use in mind. If you're a water utility interested in pilot testing, feel free to reach out via LinkedIn or open an issue!
+---
+
+## 🌟 Key Learnings & Challenges
+Leveraged Hopsworks Feature Store for efficient feature management.
+
+Integrated GenAI summarization for actionable reporting.
+
+Implemented robust MLOps practices with CI/CD, orchestration, and monitoring.
+
+Overcame challenges with API rate limits and social media data noise.
+---
+
+## 📝 License
+This project is licensed under the MIT License.
+
+---
+
+## 🙌 Acknowledgments
+Hopsworks
+
+HuggingFace Transformers
+
+OpenAI
+
+Twitter Developer Platform
+---
+
+## 👨‍💻 About Me
+I'm Farshid Shoushtarian, a quantitative scientist/engineer with expertise in AI/ML, MLOps, and the water industry. Passionate about leveraging data and automation to solve real-world water challenges.
+
+👉 Connect with me on LinkedIn
+👉 Explore more projects at GitHub
+
 
