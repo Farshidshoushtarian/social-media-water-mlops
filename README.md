@@ -12,7 +12,7 @@
 This project is an automated **MLOps pipeline** designed to help **water utilities** monitor and analyze public sentiment, service issues, and potential incidents by leveraging **social media data**.
 
 🔹 Runs every **12 hours** to:
-- Ingest posts from platforms like **Twitter/X** and **Reddit**
+- Ingest posts from platforms like **Twitter/X**
 - Perform **sentiment analysis**, **NER**, and **anomaly detection**
 - Generate **GenAI-powered summaries**
 - Trigger alerts and update a live dashboard
