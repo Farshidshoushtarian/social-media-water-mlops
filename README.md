@@ -47,21 +47,21 @@ C --> D[Training Layer<br>ML Pipelines + MLflow]
 C --> E[Inference Layer<br>Batch Predictions + GenAI]
 E --> F[Alerts & Dashboard]
 ```
+---
+## ⚙️ Tech Stack
 
+CCategory | Tools/Frameworks
+Programming | Python 3.10+
+MLOps Platform | Hopsworks, MLflow
+Orchestration | Apache Airflow, Cron
+AI/ML | HuggingFace, spaCy, Scikit-learn
+GenAI | OpenAI API
+Dashboard | Streamlit
+Deployment | Docker, GitHub Actions
+Data Versioning | DVC (optional)
 
-
-⚙️ Tech Stack
-
-Category	Tools/Frameworks
-Programming	Python 3.10+
-MLOps Platform	Hopsworks, MLflow
-Orchestration	Apache Airflow, Cron
-AI/ML	HuggingFace, spaCy, Scikit-learn
-GenAI	OpenAI API
-Dashboard	Streamlit
-Deployment	Docker, GitHub Actions
-Data Versioning	DVC (optional)
-📂 Repository Structure
+---
+## 📂 Repository Structure
 plaintext
 Copy
 Edit
