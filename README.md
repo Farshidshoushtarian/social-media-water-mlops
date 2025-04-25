@@ -173,7 +173,7 @@ Twitter Developer Platform
 ## 👨‍💻 About Me
 I'm Farshid Shoushtarian, a quantitative scientist/engineer with expertise in AI/ML, MLOps, and the water industry. Passionate about leveraging data and automation to solve real-world water challenges.
 
-👉 Connect with me on LinkedIn
-👉 Explore more projects at GitHub
+👉 Connect with me on [LinkedIn](https://www.linkedin.com/in/farshid-shoushtarian-ph-d-7537b683/)
+👉 Explore more projects at [GitHub](https://github.com/Farshidshoushtarian)
 
 
