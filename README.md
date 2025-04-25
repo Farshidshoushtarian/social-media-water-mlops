@@ -140,6 +140,7 @@ python data_ingestion/run_ingestion.py
 ---
 ## 🤝 Potential Collaboration
 This tool is designed with real-world utility use in mind. If you're a water utility interested in pilot testing, feel free to reach out via LinkedIn or open an issue!
+
 ---
 
 ## 🌟 Key Learnings & Challenges
@@ -150,6 +151,7 @@ Integrated GenAI summarization for actionable reporting.
 Implemented robust MLOps practices with CI/CD, orchestration, and monitoring.
 
 Overcame challenges with API rate limits and social media data noise.
+
 ---
 
 ## 📝 License
@@ -165,6 +167,7 @@ HuggingFace Transformers
 OpenAI
 
 Twitter Developer Platform
+
 ---
 
 ## 👨‍💻 About Me
