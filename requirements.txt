@@ -1,0 +1,10 @@
+tweepy
+praw
+pandas
+hopsworks
+python-dotenv
+streamlit
+openai
+spacy
+scikit-learn
+requests
