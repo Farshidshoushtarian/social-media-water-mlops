@@ -60,7 +60,7 @@ E --> F[Alerts & Dashboard]
 | GenAI            | OpenAI API                        |
 | Dashboard        | Streamlit                         |
 | Deployment       | Docker, GitHub Actions            |
-| Data Versioning  | DVC (optional)                    |
+| Data Versioning  | DVC                               |
 
 ---
 
