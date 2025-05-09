@@ -1,4 +1,4 @@
-# twitter_scraper.py (Twitter API v2)
+# twitter_scraper.py (Fixed to DC Water + Keywords)
 
 import os
 import json
@@ -10,25 +10,44 @@ import tweepy
 load_dotenv()
 bearer_token = os.getenv("TWITTER_BEARER_TOKEN")
 
-# Authenticate
+# Authenticate with Twitter API v2
 client = tweepy.Client(bearer_token=bearer_token)
 
-# Query setup
-query = "water outage OR pipe burst OR low pressure -is:retweet"
-max_results = 50
+# Fixed utility and keywords
+utility_name = "DC Water"
+x_handle = "@dcwater"
+keywords = [
+    "water outage",
+    "no water",
+    "low water pressure",
+    "burst pipe",
+    "dirty water",
+    "brown water",
+    "boil water notice",
+    "discolored water",
+    "water contamination",
+    "high water bill"
+]
 
-# Search tweets from the last 7 days
-response = client.search_recent_tweets(query=query, max_results=max_results, tweet_fields=["created_at", "text", "author_id", "lang"])
+# Build the query: (@dcwater OR keyword1 OR keyword2 ...) -is:retweet
+query = f"{x_handle} AND ({' OR '.join(keywords)}) -is:retweet"
 
-# Output directory
+# Twitter search params
+max_results = 100
+response = client.search_recent_tweets(
+    query=query,
+    max_results=max_results,
+    tweet_fields=["created_at", "text", "author_id", "lang", "public_metrics"],
+)
+
+# Save tweets
 output_dir = "data_ingestion/raw_data"
 os.makedirs(output_dir, exist_ok=True)
-filename = f"{output_dir}/tweets_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+filename = f"{output_dir}/dc_water_tweets_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 
-# Save results
 with open(filename, "w", encoding="utf-8") as f:
-    for tweet in response.data:
+    for tweet in response.data or []:
         json.dump(tweet.data, f)
         f.write("\n")
 
-print(f"✅ Saved {len(response.data)} tweets to {filename}")
+print(f"✅ Saved {len(response.data or [])} tweets for {utility_name} to {filename}")
